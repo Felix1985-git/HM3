@@ -13,14 +13,6 @@ public class Main {
             System.out.println("Зима");
         } else if (month == 3 || month == 4 || month == 5) {
             System.out.println("Весна");
-        } else if (month == 6 || month == 7 || month == 8) {
-            System.out.println("Лето");
-        } else if (month == 9 || month == 10 || month == 11) {
-            System.out.println("Осень");
-        } else if (month == 12 || month == 1 || month == 2) {
-            System.out.println("Зима");
-        } else if (month == 3 || month == 4 || month == 5) {
-            System.out.println("Весна");
         } else if (month > 12 || month < 0) {
             System.out.println("Нету такого месяца");
         }
@@ -67,14 +59,10 @@ public class Main {
         squareArray[1][2] = 5;
 // Выводим многомерный массив в консоль в виде таблицы
         for (int i = 0; i < 2; i++) {
-            for (int j = 0; j < 3; j++) ;
+            for (int j = 0; j < 3; j++) {
+                System.out.print("["+i+"]["+j+"]" + squareArray[i][j]+" ");
+            }
+            System.out.println();
         }
-        System.out.print("[0][0]" + squareArray[0][0] + " ");
-        System.out.print("[0][1]" + squareArray[0][1] + " ");
-        System.out.print("[0][2]" + squareArray[0][2] + " ");
-        System.out.println();
-        System.out.print("[1][0]" + squareArray[1][0] + " ");
-        System.out.print("[1][1]" + squareArray[1][1] + " ");
-        System.out.print("[1][2]" + squareArray[1][2] + " ");
     }
 }
